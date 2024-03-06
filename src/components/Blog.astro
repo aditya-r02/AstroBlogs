@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+const {frontmatter} = Astro.props;
+---
+
+<style>
+    *{
+        color:white;
+    }
+</style>
+
+<Layout title="Welcome to Astro.">
+    <h1>
+        {frontmatter.heading}
+    </h1>
+    <p>
+        Comments
+    </p>
+
+    <section class="giscus" style="max-width: 2000px;">
+
+    </section>
+
+
+</Layout>
+
+<script src="https://giscus.app/client.js"
+        data-repo="aditya-r02/AstroBlogs"
+        data-repo-id="R_kgDOLcrBQg"
+        data-category="Blog Post Comments"
+        data-category-id="DIC_kwDOLcrBQs4CdxeR"
+        data-mapping="url"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
